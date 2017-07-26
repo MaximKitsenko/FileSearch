@@ -14,7 +14,7 @@ namespace FileSearch
 		private readonly Encoding _encoding = Encoding.GetEncoding("Windows-1251");
 		private readonly int _maxThreads = 1;
 		public ChunksDescriptor _chunksDescriptor = new ChunksDescriptor();
-		public StringSeeker _StringSeeker = new StringSeeker();
+		public IStringSeeker _StringSeeker = new StringSeeker();
 
 		public FileSearcher(int chunkSize, int maxThreads)
 		{
