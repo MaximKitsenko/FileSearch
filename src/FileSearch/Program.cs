@@ -23,7 +23,9 @@ namespace FileSearch
 			//var fs = new FileSearcher(1024*1024*25,16);//30sec
 			//var fs = new FileSearcher(1024*1024*10,32);//28sec
 			//var fs = new FileSearcher(1024*1024*5,64);//27.8sec
-			var fs = new FileSearcher(1024 * 1024 * 17, 64); //27.2sec
+			//var fs = new FileSearcher(1024 * 1024 * 17, 64); //18sec
+			//var fs = new FileSearcher(1024 * 1024 * 1, 32); //18sec
+			var fs = new FileSearcher(1024 * 1024 * 1, 8); //17.2sec
 			var sw = Stopwatch.StartNew();
 			var resss = fs.CalculateCountInFile(filePath, pattern, x => Console.WriteLine("Progress: {0:P1}", x));
 			sw.Stop();
