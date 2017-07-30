@@ -73,5 +73,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\submodules\MaxKits.Tools\src\MaxKits.Tools\MaxKits.Tools.csproj">
+      <Project>{dea026ca-d440-46e5-87cf-619fb160c58f}</Project>
+      <Name>MaxKits.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

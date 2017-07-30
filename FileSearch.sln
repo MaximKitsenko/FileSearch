@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSearch", "src\FileSearc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIleSearch.Tests", "src\FIleSearch.Tests\FIleSearch.Tests.csproj", "{45D09FE9-5D56-465A-B12D-2A95548C346F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxKits.Tools", "submodules\MaxKits.Tools\src\MaxKits.Tools\MaxKits.Tools.csproj", "{DEA026CA-D440-46E5-87CF-619FB160C58F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{45D09FE9-5D56-465A-B12D-2A95548C346F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45D09FE9-5D56-465A-B12D-2A95548C346F}.Release|x64.ActiveCfg = Release|x64
 		{45D09FE9-5D56-465A-B12D-2A95548C346F}.Release|x64.Build.0 = Release|x64
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Debug|x64.Build.0 = Debug|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Release|x64.ActiveCfg = Release|Any CPU
+		{DEA026CA-D440-46E5-87CF-619FB160C58F}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
