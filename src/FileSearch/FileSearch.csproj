@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChunksDescriptor.cs" />
-    <Compile Include="Misc\EnumerableExtensions.cs" />
     <Compile Include="FileSearcher.cs" />
     <Compile Include="IStringSeeker.cs" />
     <Compile Include="Program.cs" />
