@@ -1,0 +1,6 @@
+[submodule "packages/MaxKits.Tools"]
+	path = packages/MaxKits.Tools
+	url = git@github.com:MaximKitsenko/MaxKits.Tools.git
+[submodule "submodules/MaxKits.Tools"]
+	path = submodules/MaxKits.Tools
+	url = git@github.com:MaximKitsenko/MaxKits.Tools.git
