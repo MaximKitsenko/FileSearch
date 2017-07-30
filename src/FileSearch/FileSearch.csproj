@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnyTextSearcher\SearchManager.cs" />
+    <Compile Include="AnyTextSearcher\SearchPartDescriptor.cs" />
     <Compile Include="TextSearcher\ChunksDescriptor.cs" />
     <Compile Include="TextSearcher\FileSearcher.cs" />
     <Compile Include="TextSearcher\IStringSeeker.cs" />

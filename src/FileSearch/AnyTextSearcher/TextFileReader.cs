@@ -1,6 +1,9 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace FileSearch
 {
@@ -25,6 +28,27 @@ namespace FileSearch
 			var readed = sr.Read(buffer, idx, cnt);
 			var readedString = new string(buffer.Take(readed).ToArray());
 			return readedString;
+		}
+
+		public Task ReadSymbolsUntilEof(Func<int> idxFactory, Action<string,int> onReaded, int cnt)
+		{
+			return new Task(() =>
+			{
+				var idx = idxFactory();
+
+				do
+				{
+					var readSymbols = ReadSymbols(idx, cnt);
+					if (!string.IsNullOrWhiteSpace(readSymbols))
+					{
+						onReaded(readSymbols, idx);
+					}
+					else
+					{
+						return;
+					}
+				} while (true);
+			});
 		}
 	}
 }
