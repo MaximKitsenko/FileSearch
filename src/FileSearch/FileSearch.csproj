@@ -62,14 +62,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChunksDescriptor.cs" />
-    <Compile Include="FileSearcher.cs" />
-    <Compile Include="IStringSeeker.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="AnyTextSearcher\SearchManager.cs" />
+    <Compile Include="TextSearcher\ChunksDescriptor.cs" />
+    <Compile Include="TextSearcher\FileSearcher.cs" />
+    <Compile Include="TextSearcher\IStringSeeker.cs" />
+    <Compile Include="TextSearcher\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchInfo.cs" />
-    <Compile Include="StringSeeker.cs" />
-    <Compile Include="TextFileReader.cs" />
+    <Compile Include="TextSearcher\SearchInfo.cs" />
+    <Compile Include="TextSearcher\StringSeeker.cs" />
+    <Compile Include="AnyTextSearcher\TextFileReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
