@@ -19,7 +19,12 @@ namespace FileSearch
 		{
 			_processorsCount = processorsCount;
 			_path = path;
-			_partsQueue = Enumerable.Range(0, _processorsCount).Select((x, i) => new Queue<SearchPartDescriptor>()).ToList();
+			_partsQueue = Enumerable.Range(0, _processorsCount).Select((x, i) =>
+			{
+				var searchPartDescriptors = new Queue<SearchPartDescriptor>();
+				searchPartDescriptors.
+				return searchPartDescriptors;
+			}).ToList();
 			_textReaders = Enumerable.Range(0, _processorsCount)
 				.Select((x, i) => new TextFileReader(path, Encoding.UTF8).ReadSymbolsUntilEof(
 					() => Interlocked.Increment(ref _currentIdx),
